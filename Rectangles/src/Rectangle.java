@@ -64,7 +64,7 @@ public class Rectangle {
 
     @Override public boolean equals(Object obj){
         Rectangle rec = (Rectangle) obj;
-        if(this.length + this.height == rec.height + rec.length){
+        if(this.length == rec.length && this.height == rec.height){
             return true;
         }
         else{
